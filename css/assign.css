@@ -1,0 +1,230 @@
+@import url('http://fonts.googleapis.com/css?family=Archivo+Narrow'); 
+ 
+ .a{
+ 
+ text-decoration:none;
+ color:#340DBF;
+ }
+ 
+ h4{
+  color:#3A5697;
+ font-family:"Archivo Narrow";
+ font-size:22px;
+ margin-top:10px;
+ }
+ 
+ 
+ #redirectdiv{
+   //  background-color:azure;
+	 height:700px;
+ 
+ }
+ 
+ .font{
+      font-family:"Archivo Narrow";
+	  color:white;
+ 
+ }
+ h1{
+         color:#fff;
+		 font-size:50px;
+		 text-align:center;
+		 margin:0;
+		  font-family:"Archivo Narrow";
+		  padding:20px 0px;
+		 }
+
+body{
+background-color:#F0F3FA;
+
+}
+ 
+ header{
+	            
+         background-color:#3A5697;
+         border-radius:10px;				
+	            
+	         }
+			 
+footer{
+
+         background-color:#FFE9B7;
+         
+
+}
+
+#div_mid_left{
+    
+        height:600px;
+		width:40%;
+		
+		float:left;
+
+
+
+		}
+#div_mid_right{
+        height:600px;
+		width:60%;
+        
+        float:left;
+
+}
+
+#div_footer_left{
+      height:250px;
+	  width:39%;
+	 background-color:#3A5697;
+	  float:left;
+
+
+
+}	
+#div_footer_right{
+      height:250px;
+	  width:60%;
+	  background-color:#3A5697;
+	  float:right;
+      
+
+
+}		
+		
+#image-text{
+
+    margin-left:10px;
+	background-color:white;
+
+
+}		
+
+#img{
+
+     display:block;
+	 padding-left:17px; 
+	 padding-top:17px;
+     border-radius:10px;
+
+
+}
+#p{
+      text-align:center;
+      padding-left:17px;
+      padding-right:17px;
+
+}
+.new_div{
+
+    height:110px;
+	width:780px;
+	background-color:white;
+	margin:10px;
+    border:1px solid #3A5697;
+	
+
+
+}
+.text-width{
+
+width:230px;
+
+}
+.newdivi{
+overflow:hidden;
+max-width:100ch;
+white-space:nowrap;
+text-overflow:ellipsis;
+
+}
+h2{
+    font-family:"Archivo Narrow";
+   text-align:center;
+   color:#4626BD;
+}
+h3{
+  text-align:center;
+}
+hr{
+color:#A33533;
+
+}
+.buttonfloat{
+float:right;
+margin-top:90px;
+}
+
+
+#formfloat{
+      float:left;
+	  margin-top:5%;
+	  margin-left:32%;
+	  
+
+
+}
+#symbol{
+
+   margin-left:40%;
+   margin-top:30px;
+
+}
+
+.outputcolor{
+
+       color:white;
+
+}
+@media screen and (max-width:600px){
+#div_mid_left{
+            width:100%;
+          }
+		  
+		  
+
+#div_mid_right{
+        
+		width:100%;
+       
+
+}
+#div_footer_right{
+      margin-top:2%;
+	  width:100%;
+
+   
+
+
+}	
+#img{
+     width:93%;
+
+}
+#p{
+     width:93%;
+}	
+.new_div{
+      
+      width:auto;
+}
+#div_footer_left{
+     width:100%;
+}
+
+h2
+{
+text-align:center;
+}
+h3{
+text-align:center;
+
+}
+#symbol{
+   /* margin-top:30px;
+   margin-left:155px;*/
+   align:center;
+
+}
+#formfloat{
+ align:center;
+ padding-right:10px;
+}

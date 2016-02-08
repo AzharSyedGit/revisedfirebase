@@ -1,0 +1,76 @@
+<html>
+  <head>
+       <link href="css/assign.css" type="text/css" rel="stylesheet">
+	   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	    <script src="js/assign.js"></script>
+		<script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+	   <script>
+	   var x=window.location.hash.substring(1);
+	  
+	  var myFirebaseRef = new Firebase("https://assign1234.firebaseio.com/");
+	  if(x=="test1"){
+	   myFirebaseRef.child("HEADING1").on("value", function(snapshot) {
+  document.getElementById("div11").innerHTML=snapshot.val();  
+  document.getElementById("div12").innerHTML=snapshot.name(); 
+});}
+     else if(x=="test2"){
+	   myFirebaseRef.child("HEADING2").on("value", function(snapshot) {
+  document.getElementById("div11").innerHTML=snapshot.val();  
+  document.getElementById("div12").innerHTML=snapshot.name(); 
+});}
+
+ else if(x=="test3"){
+	   myFirebaseRef.child("HEADING3").on("value", function(snapshot) {
+  document.getElementById("div11").innerHTML=snapshot.val();
+document.getElementById("div12").innerHTML=snapshot.name();  
+});}
+
+ else if(x=="test4"){
+	   myFirebaseRef.child("HEADING4").on("value", function(snapshot) {
+  document.getElementById("div11").innerHTML=snapshot.val();  
+  document.getElementById("div12").innerHTML=snapshot.name(); 
+});}
+</script>
+</head>
+  <body>
+      <header>
+      <h1><a href="index.html" style="text-decoration:none; color:white;">Sears Holdings India</a></h1>
+	  
+      </header>
+	  <div id="redirectdiv">
+	  
+	  <h4>Latest News</h4><hr>
+	  <div id="div12"></div>
+				<div id="div11" ></div>
+	  
+	  </div>
+	  
+	  
+	   <footer>
+	     <div id="div_footer_left">
+		 <h3 class="font">Sears Address</h3><hr>
+		 <div id="symbol">
+		 <i class="fa fa-home font" style="font-size:24px" ></i><label class="font" style="color:white;"> Chicago</label><br><br>
+		 <i class="fa fa-tty font" style="font-size:24px"></i><label class="font" style="color:white;"> +91-0000000000</label>
+		 </div>
+		 </div>
+	     <div id="div_footer_right">
+		 
+		 <div id="formfloat">
+		 <form name="myForm" onsubmit="return validateForm()" method="post">
+		  <label class="font" style="color:white;">Email:</label><br><input type="text" name="text1" id="text1" class="text-width" placeholder="Your Email"><br>
+	     <label class="font" style="color:white;"> Name:</label><br><input type="text" name="text2" id="text2" placeholder="Your Name"  class="text-width"><br>
+	     <label class="font" style="color:white;"> Message:</label><br><textarea rows="4" cols="30" id="text3" ></textarea><br>
+	      <input type="submit" name="button" value="check" id="button">
+		
+		  
+		 </form>
+		  <div id="output" class="outputcolor"></div>
+		 </div>
+		 
+		 </div>
+	  
+	  </footer>
+	  
+ </body>
+ </html>
